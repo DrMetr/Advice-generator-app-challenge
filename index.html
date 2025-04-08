@@ -18,19 +18,22 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
 </head>
-<body class="bg-BlackBlue flex flex-col items-center p-[1rem] md:p-[25vh] text-[28px] font-Manrop relative">
+<body class="bg-BlackBlue flex flex-col items-center p-[1rem] pt-[20vh] md:p-[24vh] text-[28px] font-Manrop">
 
-  <div class="advice_card flex flex-col bg-DarkBlue rounded-lg p-[1rem] mb-[1lh] items-center">
+  <div class="advice_card flex flex-col bg-DarkBlue rounded-lg p-[1rem] mb-[1lh] items-center relative min-w-[300px] md:max-w-[50vw]">
     <div class="advice_number text-Mint text-[10px] tracking-[3px]"> ADVICE #<!-- Advice ID goes here --></div>
+    <p class="advice_p font-medium text-White m-[1lh]">bla bla bla</p>
+  
+    <picture>
+      <source srcset="images/pattern-divider-desktop.svg" media="(min-width: 400px)">
+      <source srcset="images/pattern-divider-mobile.svg">
+      <img src="images/pattern-divider-mobile.svg">
+    </picture>
+    <br>
 
-  "<!-- Advice text goes here -->"
-  <picture>
-    <source srcset="images/pattern-divider-desktop.svg" media="(min-width: 400px)">
-    <source srcset="images/pattern-divider-mobile.svg">
-    <img src="images/pattern-divider-mobile.svg">
-  </picture>
-
-  <img src="images/icon-dice.svg" class="absolute">
+    <div class="absolute rounded-full bg-Mint p-4 bottom-[-10%] hover:drop-shadow-xl">
+      <img src="images/icon-dice.svg">
+    </div>
   </div>
   
   <footer class="attribution">
